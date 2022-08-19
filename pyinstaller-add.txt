@@ -1,0 +1,1 @@
+pyinstaller win_bmi.py --add-data "./sound/*;./sound" --add-data "./*.ui;./" --add-data "./*.png;./" --add-data "./*.ini;./"
