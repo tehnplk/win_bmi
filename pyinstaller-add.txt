@@ -1,1 +1,5 @@
 pyinstaller win_bmi.py --add-data "./sound/*;./sound" --add-data "./*.ui;./" --add-data "./*.png;./" --add-data "./*.ini;./"
+
+pyinstaller win_bptm.py --add-data "./sound/*;./sound" --add-data "./*.ui;./" --add-data "./*.png;./" --add-data "./*.ini;./"
+
+pyinstaller win_vs.py --add-data "./sound/*;./sound" --add-data "./*.ui;./" --add-data "./*.png;./" --add-data "./*.ini;./"
