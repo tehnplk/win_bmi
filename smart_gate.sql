@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost_3306
+Source Server         : V-PI
 Source Server Version : 50505
-Source Host           : localhost:3306
-Source Database       : hosxp_pcu
+Source Host           : 192.168.1.161:3306
+Source Database       : log
 
 Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2022-08-18 12:34:47
+Date: 2022-08-21 17:42:52
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -33,11 +33,7 @@ CREATE TABLE `smart_gate_bmi` (
   `hn` varchar(255) DEFAULT NULL,
   `fullname` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
-
--- ----------------------------
--- Records of smart_gate_bmi
--- ----------------------------
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Table structure for smart_gate_bp
@@ -47,6 +43,7 @@ CREATE TABLE `smart_gate_bp` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `vn` varchar(255) DEFAULT NULL,
   `cid` varchar(255) DEFAULT NULL,
+  `tp` varchar(255) DEFAULT NULL,
   `bps` varchar(255) DEFAULT NULL,
   `bpd` varchar(255) DEFAULT NULL,
   `pulse` varchar(255) DEFAULT NULL,
@@ -57,11 +54,7 @@ CREATE TABLE `smart_gate_bp` (
   `hn` varchar(255) DEFAULT NULL,
   `fullname` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
-
--- ----------------------------
--- Records of smart_gate_bp
--- ----------------------------
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Table structure for smart_gate_sp
@@ -80,11 +73,7 @@ CREATE TABLE `smart_gate_sp` (
   `hn` varchar(255) DEFAULT NULL,
   `fullname` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
-
--- ----------------------------
--- Records of smart_gate_sp
--- ----------------------------
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Table structure for smart_gate_tp
@@ -102,8 +91,4 @@ CREATE TABLE `smart_gate_tp` (
   `hn` varchar(255) DEFAULT NULL,
   `fullname` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
-
--- ----------------------------
--- Records of smart_gate_tp
--- ----------------------------
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
