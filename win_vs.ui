@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1023</width>
-    <height>763</height>
+    <width>1197</width>
+    <height>770</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -63,7 +63,7 @@ color: rgb(255, 255, 255);</string>
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout_3">
+         <layout class="QVBoxLayout" name="verticalLayout_3" stretch="30,70">
           <item>
            <widget class="QFrame" name="frame_4">
             <property name="frameShape">
@@ -164,7 +164,7 @@ background-color: rgb(255, 255, 255);</string>
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,5,90,5">
+            <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="10,10,70,10">
              <item>
               <widget class="QPushButton" name="btnKey">
                <property name="styleSheet">
@@ -174,6 +174,12 @@ color: rgb(0, 0, 0);</string>
                </property>
                <property name="text">
                 <string>KEY</string>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>120</width>
+                 <height>80</height>
+                </size>
                </property>
               </widget>
              </item>
@@ -202,8 +208,8 @@ color: rgb(0, 0, 0);</string>
                </property>
                <property name="iconSize">
                 <size>
-                 <width>50</width>
-                 <height>40</height>
+                 <width>120</width>
+                 <height>80</height>
                 </size>
                </property>
                <property name="autoDefault">
@@ -222,14 +228,14 @@ color: rgb(0, 0, 0);</string>
                <property name="font">
                 <font>
                  <family>MS Shell Dlg 2</family>
-                 <pointsize>18</pointsize>
+                 <pointsize>32</pointsize>
                  <weight>50</weight>
                  <italic>false</italic>
                  <bold>false</bold>
                 </font>
                </property>
                <property name="styleSheet">
-                <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+                <string notr="true">font: 32pt &quot;MS Shell Dlg 2&quot;;</string>
                </property>
                <property name="text">
                 <string>นายสมชาย มีมาก</string>
@@ -261,8 +267,8 @@ color: rgb(0, 0, 0);</string>
                </property>
                <property name="iconSize">
                 <size>
-                 <width>50</width>
-                 <height>40</height>
+                 <width>120</width>
+                 <height>80</height>
                 </size>
                </property>
                <property name="autoDefault">
