@@ -18,7 +18,7 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">background-color:rgb(0, 0, 195);</string>
+    <string notr="true">background-color:rgb(0, 0, 182)</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout" stretch="15,15,70">
     <item>
@@ -93,7 +93,7 @@ color:white;</string>
            <widget class="QLabel" name="lbHn">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>20</pointsize>
              </font>
             </property>
             <property name="styleSheet">
@@ -138,7 +138,7 @@ color:white;</string>
            <widget class="QLabel" name="lbFullname">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>20</pointsize>
              </font>
             </property>
             <property name="styleSheet">
