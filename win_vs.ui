@@ -169,7 +169,7 @@ background-color: rgb(255, 255, 255);</string>
               <widget class="QPushButton" name="btnKey">
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(255, 255, 255);
-font: 16pt &quot;MS Shell Dlg 2&quot;;
+font: 40pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(0, 0, 0);</string>
                </property>
                <property name="text">

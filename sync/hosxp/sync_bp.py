@@ -33,7 +33,7 @@ def post_data(vn, row):
 
 def do():
     print('BP==========', str(datetime.now())[:-7], '==========')
-    sql = "select * from smart_gate_bp where vn is null or trim(vn) = ''"
+    sql = "select * from smart_gate_bp where vn is null or vn='None' or trim(vn) = ''"
     with con.cursor() as cursor:
         cursor.execute(sql)
         rows = cursor.fetchall()
@@ -42,25 +42,23 @@ def do():
         for row in rows:
             _id = row['id']
             cid = row['cid']
+            hn = row['hn']
             vn, _date, _time = get_today_visit_number(cid)
             if vn:
                 resp = post_data(vn, row)
                 print(cid, resp)
-                if resp['vn']:
+                if resp:
                     sql = f"update smart_gate_bp set vn = '{vn}',d_sync = now() where id = {_id} "
                     cursor.execute(sql)
 
             else:
-                print(cid, 'VN is none.')
+                print(cid, hn, 'VN is none.')
 
     con.commit()
     print()
 
 
-def run():
+if __name__ == '__main__':
     while 1:
         do()
         time.sleep(5)
-
-
-run()
